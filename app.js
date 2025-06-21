@@ -1260,12 +1260,6 @@ const lighthouses = [
     light_color: 'white'
   },
   {
-    name: 'Great Duck Island',
-    coords: [44.68480713703223, -66.69015735382541],
-    range_nm: 15,
-    light_color: 'white'
-  },
-  {
     name: 'Gore Bay (Janet Head)',
     coords: [45.94604175377646, -82.48051420548694],
     range_nm: 11,
@@ -2137,7 +2131,6 @@ lighthouses.forEach(lh => {
 
   marker.bindPopup(
     `<strong>${lh.name}</strong><br>
-      <span>Lake name: ${lh.lake_name} NM</span><br>
       <span>Visibility: ${lh.range_nm} NM</span><br>
       <span>Light color: <span style="color:${color}">${lh.light_color}</span></span>`
   );
